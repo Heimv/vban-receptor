@@ -1,0 +1,3 @@
+mutation SetStreamName($streamName: String!) {
+    setStreamName(streamName: $streamName)
+}

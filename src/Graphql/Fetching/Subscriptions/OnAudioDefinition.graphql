@@ -1,0 +1,7 @@
+subscription OnAudioDefinition {
+    onAudioDefinition {
+        channel
+        format
+        sampleRate
+    }
+}

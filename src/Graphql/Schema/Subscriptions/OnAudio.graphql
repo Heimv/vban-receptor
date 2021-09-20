@@ -1,0 +1,22 @@
+type SampleHeader {
+    sr: Int!
+    sp: Int!
+    nbSample: Int!
+    nbChannel: Int!
+    formatIndex: Int!
+    bitDepth: Int!
+    signed: Boolean!
+    float: Boolean!
+    codec: Int!
+    streamName: String!
+    frameCounter: Int!
+}
+
+type AudioSample {
+    header: SampleHeader!
+    audio: [Int]!
+}
+
+extend type Subscription {
+    onAudio: [Float]
+}

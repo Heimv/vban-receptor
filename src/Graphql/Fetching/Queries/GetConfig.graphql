@@ -1,0 +1,13 @@
+query GetConfig {
+    getConfig {
+        stream {
+            name
+            ip
+        }
+        audio {
+            sampleRate
+            channel
+            format
+        }
+    }
+}

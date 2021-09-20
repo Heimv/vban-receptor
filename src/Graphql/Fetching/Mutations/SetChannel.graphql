@@ -1,0 +1,3 @@
+mutation SetChannelMutation($channel: Int!) {
+    setChannel(channel: $channel)
+}

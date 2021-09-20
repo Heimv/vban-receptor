@@ -1,0 +1,3 @@
+mutation SetGainMutation($gain: Float!) {
+    setGain(gain: $gain)
+}

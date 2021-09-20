@@ -1,0 +1,15 @@
+{
+  "name": "Vban GraphQL Schema",
+  "schemaPath": "./src/Graphql",
+  "extensions": {
+    "endpoints": {
+      "Vban GraphQL Endpoint": {
+        "url": "http://localhost:4000",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      }
+    }
+  }
+}

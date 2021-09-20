@@ -1,0 +1,9 @@
+type AudioDefinition {
+    sampleRate: Int!
+    channel: Int!
+    format: Int!
+}
+
+extend type Subscription {
+    onAudioDefinition: AudioDefinition!
+}

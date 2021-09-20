@@ -1,0 +1,3 @@
+mutation SetFormatMutation($format: Int!) {
+    setFormat(format: $format)
+}

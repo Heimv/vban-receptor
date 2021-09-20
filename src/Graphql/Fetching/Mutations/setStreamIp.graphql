@@ -1,0 +1,3 @@
+mutation SetStreamIp($streamIp: String!) {
+    setStreamIp(streamIp: $streamIp)
+}

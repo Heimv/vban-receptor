@@ -1,0 +1,13 @@
+mutation SetConfig($config: SetConfig!) {
+    setConfig(config: $config) {
+        stream {
+            name
+            ip
+        }
+        audio {
+            sampleRate
+            channel
+            format
+        }
+    }
+}

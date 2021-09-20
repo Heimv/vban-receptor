@@ -1,0 +1,19 @@
+input SetStream {
+    name: String!
+    ip: String!
+}
+
+input SetAudio {
+    sampleRate: Int
+    channel: Int
+    format: Int
+}
+
+input SetConfig {
+    stream: SetStream!
+    audio: SetAudio!
+}
+
+extend type Mutation {
+    setConfig(config: SetConfig!): Config!
+}

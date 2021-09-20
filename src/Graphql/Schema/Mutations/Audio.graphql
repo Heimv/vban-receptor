@@ -1,0 +1,9 @@
+extend type Mutation {
+    setStreamName(streamName: String!): String!
+    setStreamIp(streamIp: String!): String!
+    setFormat(format: Int!): Int!
+    setSampleRate(sampleRate: Int!): Int!
+    setChannel(channel: Int!): Int!
+    setGain(gain: Float!): Float!
+    mute: Boolean!
+}

@@ -1,0 +1,21 @@
+type Stream {
+    name: String!
+    ip: String!
+}
+
+type Audio {
+    sampleRate: Int
+    channel: Int
+    format: Int
+}
+
+type Config {
+    id: ID!
+    stream: Stream!
+    audio: Audio!
+}
+
+extend type Query {
+    getConfig: Config
+}
+
